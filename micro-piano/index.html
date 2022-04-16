@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Micro piano</title>
+</head>
+
+<body class="page">
+    <div class="keys">
+        <div data-key="KeyA" class="key">
+            <span class="sound">С</span>
+        </div>
+        <div data-key="KeyS" class="key">
+            <span class="sound">В</span>
+        </div>
+        <div data-key="KeyD" class="key">
+            <span class="sound">E</span>
+        </div>
+        <div data-key="KeyF" class="key">
+            <span class="sound">F</span>
+        </div>
+        <div data-key="KeyG" class="key">
+            <span class="sound">G</span>
+        </div>
+        <div data-key="KeyH" class="key">
+            <span class="sound">A</span>
+        </div>
+        <div data-key="KeyJ" class="key">
+            <span class="sound">B</span>
+        </div>
+        <div data-key="KeyK" class="key">
+            <span class="sound">C</span>
+        </div>
+    </div>
+
+    <audio data-key="KeyA" src="sounds/note-C.wav"></audio>
+    <audio data-key="KeyS" src="sounds/note-D.wav"></audio>
+    <audio data-key="KeyD" src="sounds/note-E.wav"></audio>
+    <audio data-key="KeyF" src="sounds/note-F.wav"></audio>
+    <audio data-key="KeyG" src="sounds/note-G.wav"></audio>
+    <audio data-key="KeyH" src="sounds/note-A.wav"></audio>
+    <audio data-key="KeyJ" src="sounds/note-B.wav"></audio>
+    <audio data-key="KeyK" src="sounds/note-second-C.wav"></audio>
+
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>
