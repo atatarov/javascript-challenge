@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Scoped CSS Variables and JS</title>
+</head>
+
+<body class="page">
+    <h2 class="header">Update CSS Variables with <span class="header-span">JS</span></h2>
+
+    <div class="controls">
+        <label for="spacing">Spacing</label>
+        <input type="range" name="spacing" min="10" max="100" value="10" data-sizing="px">
+
+        <label for="blur">Blur</label>
+        <input type="range" name="blur" min="0" max="25" value="10" data-sizing="px">
+
+        <label for="base">Base Color</label>
+        <input class="color-chooser" type="color" name="base" value="#ffc600">
+    </div>
+
+    <img class="picture" src="images/nature.jpg" alt="nature">
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
