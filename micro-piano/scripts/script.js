@@ -14,11 +14,13 @@ function addTransition(key) {
 
 window.addEventListener("keydown", function (event) {
   playAudioByKey(event.code);
+  addTransition(event.code);
 });
 
 window.addEventListener("click", function (event) {
   const dataKey = event.target.getAttribute("data-key");
   playAudioByKey(dataKey);
+  addTransition(dataKey);
 });
 
 function removeTransition(event) {
