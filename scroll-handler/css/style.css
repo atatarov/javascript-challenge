@@ -1,0 +1,76 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+body {
+  color: #fff;
+  background: #2b3e50;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  min-height: 2000px;
+}
+
+a {
+  transition: 0.15s ease all;
+  text-decoration: none;
+}
+#masthead {
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  height: 300px;
+  background: #4e5d6c;
+  transition: 0.3s ease all;
+}
+.container {
+  padding-left: 35px;
+  padding-right: 35px;
+  margin: auto;
+}
+
+nav {
+  padding-top: 20px;
+  text-align: right;
+}
+nav ul {
+  display: inline;
+}
+nav li {
+  display: inline;
+}
+nav li a {
+  margin: 0 5px;
+  color: #fff;
+}
+nav .anchors a {
+  padding: 10px 15px;
+}
+nav .anchors a:hover {
+  color: #df691a;
+  text-decoration: none;
+}
+
+hgroup {
+  position: relative;
+  transition: 0.15s ease all;
+  padding-top: 30px;
+}
+hgroup h1 {
+  font-weight: 300;
+  font-size: 4.5em;
+}
+hgroup h2 {
+  font-size: 1.25em;
+}
+
+#masthead.scrolled {
+  height: 65px;
+}
+
+#masthead.scrolled hgroup {
+  opacity: 0;
+  transform: translateY(-75px);
+  color: red;
+}
+
+#sitetitle {
+  text-align: center;
+}
