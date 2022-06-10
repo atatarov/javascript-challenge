@@ -1,0 +1,68 @@
+:root {
+    --gray: rgba(15, 14, 14, 0.338);
+    --column-position0: 1fr;
+    --column-position1: 1fr;
+    --column-position2: 1fr;
+    --column-position3: 1fr;
+    --column-position4: 1fr;
+}
+
+.page {
+    max-width: 1020px;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+    font-style: normal;
+    background-color: black;
+    color: white;
+}
+
+.panels {
+    display: grid;
+    grid-template-columns: var(--column-position0) var(--column-position1) var(--column-position2) var(--column-position3) var(--column-position4);
+    min-height: 100vh;
+    overflow: hidden;
+    transition: all 1s;
+}
+
+.panel {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.panel-image {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.panel-paragraph {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0, 0.45);
+    font-family: 'Amatic SC', cursive;
+    font-size: 2em;
+    opacity: 0;
+}
+
+.panel-paragraph-middle {
+    font-size: 4em;
+    display: block;
+    opacity: 1.0;
+}
+
+.panel-paragraph-begin {
+    transition: "all 0.5s";
+}
+
+
+.panel-paragraph-end {
+    transition: "all 0.5s";
+}
